@@ -27,7 +27,7 @@ body {
 
 .top {
     border: 1px solid black;
-    background: #F8FA9D;
+    background: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,16 +37,14 @@ body {
 
 .top-box-1 {
     border: 1px solid red;
-    background: #F8FA9D;
-    margin-left: 0;
+    margin-left: 10px;
     padding: 10px;
     width: auto;
   }
 
 .top-box-2 {
     border: 0;
-    background: #F8FA9D;
-    margin-left: 200px;
+    margin-left: 180px;
     padding: 10px;
     width: auto;
   }
@@ -66,6 +64,13 @@ ul#menu li {
 
 .header {
     grid-area:hd;
+    background-color: #eee;
+    border-bottom: solid 1px #dce3e5;
+    border-top: solid 1px #dce3e5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
 .footer{
@@ -86,7 +91,7 @@ ul#menu li {
       display: grid;
       align-content: center;
       grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 100px 250px 600px 50px;
+      grid-template-rows: 100px 160px 600px 50px;
       /* row start/column start/ row end/ column end */
       grid-template-areas:
       "tp tp tp tp"
