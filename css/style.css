@@ -29,25 +29,13 @@ a {
     background: #F8FA9D;
     }
 
-.top {
-    border: 1px solid black;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
 .top-box-1 {
     border: 1px solid red;
-    margin-left: 10px;
-    padding: 10px;
-    width: auto;
     grid-area: lg;
   }
 
 .top-box-2 {
     border: 0;
-    width: 100%;
     grid-area: nv;
   }
 
