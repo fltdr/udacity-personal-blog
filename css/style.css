@@ -29,13 +29,12 @@ a {
     background: #F8FA9D;
     }
 
-.top-box-1 {
+.logo {
     border: 1px solid red;
     grid-area: lg;
   }
 
-.top-box-2 {
-    border: 0;
+#menu {
     grid-area: nv;
   }
 
