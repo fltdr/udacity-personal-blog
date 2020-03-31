@@ -33,7 +33,7 @@ a {
     }
 
 .logo {
-    border: 1px solid red;
+    border: 0;
     grid-area: lg;
     display: flex;
     flex-direction: row;
@@ -43,11 +43,14 @@ a {
 
 #menu {
   grid-area: mn;
+  display: flex;
+  align-items: center;
   }
 
 #menu ul {
     padding: 0;
     margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-content: center;
