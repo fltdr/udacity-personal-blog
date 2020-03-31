@@ -5,6 +5,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #4c4c4c;
+}
+
+a:hover {
+  color: #bada55;
 }
 
 /* Start smaller screens */
@@ -39,7 +44,12 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
   }
+
 
 #menu {
   grid-area: mn;
@@ -59,17 +69,10 @@ a {
   }
 
 #menu ul li {
-    font-weight: 700;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
     font-size: 16px;
-    letter-spacing: normal;
-  }
-
-#menu ul li a {
-  color: #4c4c4c;
-  }
-
-#menu ul li a:hover {
-  color: #bada55;
   }
 
 .title {
@@ -84,19 +87,54 @@ a {
   }
 
 h1 {
-    font-family: Karla,'MS Sans Serif', Geneva, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     text-transform: uppercase;
 }
 
-.footer{
+h2 {
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.site-footer{
     grid-area: ft;
   }
 
 .sidebar{
     grid-area: sd;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: #fff;
   }
+
+#links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    width: 90%;
+    height: 140px;
+    border-radius: 8px;
+}
+
+#links ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
 .content{
     grid-area: main;
@@ -117,4 +155,24 @@ h1 {
       "ft ft ft ft";
       border: 2px solid blue;
   }
+}
+
+@media(min-width:768px) {
+.article-grid{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 52% 52% 52%;
+  grid-gap: 10px;
+  }
+}
+
+.article-preview {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.article-preview p {
+  margin: 5px 0;
 }
