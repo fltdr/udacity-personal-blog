@@ -1,3 +1,10 @@
+body {
+  margin: 0 auto;
+  font: 100%/1.6 Arial,sans-serif;
+}
+
+/* Start smaller screens */
+
 .container{
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -10,13 +17,19 @@
   "ft";
   border: 2px solid yellow;
 }
+
+/* End smaller screens */
+
 .box {
     border: 1px solid red;
     background: #F8FA9D;
     }
 
+.top {
+    grid-area:tp;
+  }
+
 .header {
-    /* row start/column start/ row end/ column end */
     grid-area:hd;
   }
 
@@ -35,12 +48,13 @@
 /* If Screen Is Wide Enough */
 @media(min-width:900px) {
 .container{
-      display:grid;
-      max-width: 1200px; 
+      display: grid;
+      align-content: center;
       grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 250px 600px 50px;
+      grid-template-rows: 50px 250px 600px 50px;
       /* row start/column start/ row end/ column end */
       grid-template-areas:
+      "tp tp tp tp"
       "hd hd hd hd"
       "sd main main main"
       "ft ft ft ft";
