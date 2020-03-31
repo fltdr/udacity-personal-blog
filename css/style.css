@@ -3,6 +3,10 @@ body {
   font: 100%/1.6 Arial,sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Start smaller screens */
 
 .container{
@@ -49,11 +53,11 @@ body {
     width: auto;
   }
 
-ul#menu {
+#menu ul {
     padding: 0;
   }
 
-ul#menu li {
+#menu ul li {
     display: inline;
     padding: 0 50px;
     font-weight: 700;
