@@ -27,6 +27,8 @@ body {
 
 .top {
     grid-area:tp;
+    display: flex;
+    align-items: center;
   }
 
 .header {
