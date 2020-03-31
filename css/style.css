@@ -58,12 +58,15 @@ a {
   }
 
 #menu ul li {
-    display: inline;
+    display: inline-block;
     padding: 0 50px;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: normal;
-    color: #4c4c4c;
+  }
+
+#menu ul li a {
+  color: #4c4c4c;
   }
 
 .header {
