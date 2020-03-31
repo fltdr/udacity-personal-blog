@@ -31,11 +31,15 @@ a {
 
 .logo {
     border: 1px solid red;
-    grid-area: lg;
   }
 
+header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+}
+
 #menu {
-    grid-area: nv;
   }
 
 #menu ul {
@@ -100,7 +104,7 @@ h1 {
       grid-template-rows: 100px 160px 600px 50px;
       /* row start/column start/ row end/ column end */
       grid-template-areas:
-      "lg nv nv nv"
+      "hd hd hd hd"
       "tl tl tl tl"
       "sd main main main"
       "ft ft ft ft";
