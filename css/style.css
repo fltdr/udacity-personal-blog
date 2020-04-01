@@ -141,7 +141,14 @@ h3 {
 .site-footer{
     grid-area: ft;
     margin-top: 10px;
+    padding: 5px;
   }
+
+.site-footer p {
+    font-size: 11px;
+    text-align: center;
+    color: #d3d3d3;
+    }
 
 .sidebar{
     grid-area: sd;
