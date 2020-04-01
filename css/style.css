@@ -141,6 +141,11 @@ h4 {
     text-transform: uppercase;
 }
 
+.pic {
+    width: 100%;
+    height: auto;
+}
+
 .author {
     padding: 5px;
     background-color: #eee;
@@ -153,7 +158,6 @@ h4 {
   margin: 0 10px 0 10px;
   width: 85px;
 }
-
 
 .site-footer {
     grid-area: ft;
