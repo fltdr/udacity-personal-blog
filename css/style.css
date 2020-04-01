@@ -55,11 +55,12 @@ a:hover {
   }
 
 .logo a {
-  width: 210px;
-  height: 82px;
+  width: 174px;
+  height: 61px;
   background-image: url(assets/logo.jpg);
+  background-position: center center;
+  background-size: cover;
 }
-
 
 #menu {
   grid-area: mn;
