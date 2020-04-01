@@ -14,17 +14,27 @@ a:hover {
 
 /* Start smaller screens */
 
-.container{
+.container {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px 600px 50px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 100px 160px auto auto 50px;
   /* Initially each element has its own row for small screens */
   grid-template-areas:
-  "hd"
-  "sd"
-  "main"
-  "ft";
+  "lg lg lg"
+  "mn mn mn"
+  "tl tl tl"
+  "main main main"
+  "sd sd sd"
+  "ft ft ft";
+  grid-gap: 10px;
   border: 2px solid yellow;
+}
+
+.article-grid {
+  margin: 10px 0 10px 0;
+  display: grid;
+  grid-gap: 10px;
+  }
 }
 
 /* End smaller screens */
@@ -33,7 +43,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     background: #F8FA9D;
     }
 
@@ -165,7 +174,7 @@ h3 {
 .container{
       display: grid;
       align-content: center;
-      grid-template-columns: 256px 256px 256px;
+      grid-template-columns: 250px 250px 250px;
       grid-template-rows: 100px 160px auto 50px;
       /* row start/column start/ row end/ column end */
       grid-template-areas:
@@ -173,7 +182,6 @@ h3 {
       "tl tl tl tl"
       "sd main main main"
       "ft ft ft ft";
-      border: 2px solid blue;
   }
 }
 
