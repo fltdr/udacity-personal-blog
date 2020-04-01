@@ -75,6 +75,25 @@ a:hover {
     font-size: 16px;
   }
 
+#menu ul li a {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#menu ul li a:hover {
+    background-color: #eee;
+    color: black;
+}
+#menu ul li a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
 .title {
     grid-area:tl;
     background-color: #eee;
@@ -109,6 +128,7 @@ h3 {
 
 .site-footer{
     grid-area: ft;
+    margin-top: 10px;
   }
 
 .sidebar{
@@ -146,7 +166,7 @@ h3 {
       display: grid;
       align-content: center;
       grid-template-columns: 256px 256px 256px;
-      grid-template-rows: 100px 160px 600px 50px;
+      grid-template-rows: 100px 160px auto 50px;
       /* row start/column start/ row end/ column end */
       grid-template-areas:
       "lg mn mn mn"
@@ -159,10 +179,10 @@ h3 {
 
 @media(min-width:768px) {
 .article-grid{
-  margin-top: 10px;
+  margin: 10px 5px 10px 0;
   display: grid;
   grid-template-columns: 49% 49%;
-  grid-template-rows: 52% 52% 52%;
+  grid-template-rows: 32% 32% 32%;
   grid-gap: 10px;
   }
 }
@@ -175,4 +195,10 @@ h3 {
 
 .article-preview p {
   margin: 5px 0;
+}
+
+.article-image {
+  float: left;
+  margin: 0 15px 0 0;
+  width: 115px;
 }
