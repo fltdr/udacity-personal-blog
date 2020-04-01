@@ -52,11 +52,13 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
   }
+
+.logo a {
+  width: 210px;
+  height: 82px;
+  background-image: url(assets/logo.jpg);
+}
 
 
 #menu {
@@ -111,6 +113,7 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 10px;
   }
 
 h1 {
