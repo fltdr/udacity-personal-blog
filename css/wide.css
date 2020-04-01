@@ -1,0 +1,25 @@
+/* If Screen Is Wide Enough */
+@media(min-width:768px) {
+.container {
+      display: grid;
+      align-content: center;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 100px 160px auto 100px;
+      /* row start/column start/ row end/ column end */
+      grid-template-areas:
+      "lg mn mn mn"
+      "tl tl tl tl"
+      "sd main main main"
+      "ft ft ft ft";
+  }
+}
+
+@media(min-width:768px) {
+.article-grid {
+  margin: 0 5px 10px 0;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 32% 32% 32%;
+  grid-gap: 10px;
+  }
+}
